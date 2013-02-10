@@ -7,8 +7,8 @@ A prototype-like object system based on functions.
 Nothing practical really.
 I just figured that since people have already built functional programming on top of OO (e.g. Clojure), I might as well build OO on top of FP.
 
-*Why a prototype-like OO system?*
-I believe those are the only _true_ object systems, since there are only objects and no classes.
+_Why a prototype-like OO system?_
+I believe those are the only **true** object systems, since there are only objects and no classes.
 
 That said, in `jormungandr` you don't do prototype inheritance by setting a "_proto_" attribute or something like that.
 Being functional in nature, objects are immutable, so you inherit by simply modifying objects and working with the new copies.
