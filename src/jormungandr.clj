@@ -51,7 +51,7 @@
   [attrs base-ops methods-table method-name]
   (keys methods-table))
 
-(defn- object
+(defn object
   "An object constructor with optional base arguments and methods to avoid using :$get and :$learn."
   [& [attrs methods]]
   (base-object (or attrs {})
@@ -64,7 +64,7 @@
 ;; [Macros]
 (defmacro ->1
   "A \"threading macro\" alternative that puts the item at the start of each list.
-Useful for threading call to an object."
+Useful for threading calls to an object."
   [item & exprs]
   (reduce (fn [head tail]
             (if (seq? tail)
